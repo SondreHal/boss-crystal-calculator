@@ -34,6 +34,10 @@ p {
 	grid-column-start: 2;
 }
 
+.bossPicture {
+	vertical-align: bottom;
+}
+
 .flex-right,
 .flex-left {
 	display: flex;
@@ -41,6 +45,11 @@ p {
 	align-items: center;
 	margin: 0;
 	gap: 20px;
+}
+
+.flex-left img {
+	margin-top: 5px;
+	margin-bottom: 2px;
 }
 
 .flex-boss {
