@@ -660,10 +660,58 @@ const bossesContainer = document.querySelector("#bosses");
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
+//    DYNAMIC HTML
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+function initializeHtml() {
+	let uniqueBossesHtml = "";
+	for (let i = 0; i < bosses.length; i++) {
+		uniqueBossesHtml += `<div class="flex-boss">
+				<input
+					class="charactersInParty"
+					type="number"
+					min="1"
+					max="6"
+					value="1"
+					style="font-size: 20px"
+					onkeydown="return false;"
+				/>
+				<div class="border">
+					<div class="flex-left">
+						<img class="bossPicture" />
+						<p class="bossName"></p>
+					</div>
+					<p class="absolute"></p>
+					<div class="flex-right">
+						<input
+							class="charactersInput"
+							type="number"
+							min="0"
+							max="60"
+							value="0"
+							style="font-size: 30px"
+							onkeydown="return false;"
+						/>
+					</div>
+				</div>
+				<div class="bossCrystalContainer">
+					<div class="img">
+						<img src="images/grey.png" class="bossCrystal" />
+					</div>
+					<div class="crystal_amount"><p class="crystalsToBeSold">x 0</p></div>
+				</div>
+			</div>`;
+	}
+	bossesContainer.innerHTML = uniqueBossesHtml;
+}
+initializeHtml();
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//
 //    MAKING EACH BOSS LINE UNIQUE
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
-function renderHtml() {
+function editHtml() {
 	for (let i = 0; i < bosses.length; i++) {
 		//displays boss names & difficulty in html
 		bossesContainer.children[i].children[1].children[0].children[1].textContent =
@@ -695,7 +743,7 @@ function renderHtml() {
 		);
 	}
 }
-renderHtml();
+editHtml();
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
 //    EVENT LISTENER FOR INPUTS ON LEFT SIDE
@@ -841,7 +889,7 @@ if (bossesLs) {
 		bossesContainer.children[i].children[0].value = bosses[i].previousValueTwo;
 	}
 	sortAndAdd();
-	renderHtml();
+	editHtml();
 }
 
 function storeInfo() {
