@@ -650,13 +650,22 @@ let bosses = [
 	},
 ];
 
+const bossesContainer = document.querySelector("#bosses");
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    LOCALSTORAGE HTML RENDERING
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+function storeInfo() {
+	localStorage.setItem("info", JSON.stringify(bosses));
+}
+
 const bossesLs = JSON.parse(localStorage.getItem("info"));
 
 if (bossesLs) {
 	bosses = bossesLs;
 }
-
-const bossesContainer = document.querySelector("#bosses");
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -829,6 +838,11 @@ for (let i = 0; i < bosses.length; i++) {
 	);
 }
 
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    SORTING OF ARRAY, FINDING 180 HIGHEST VALUES AND EDITING OF HTML
+//
+////////////////////////////////////////////////////////////////////////////////////////////
 function sortAndAdd() {
 	const counts = {};
 	const newBosses = [];
@@ -881,6 +895,7 @@ function sortAndAdd() {
 	console.log(highestPrices);
 }
 
+//if there is localstorage, edit values of inputs and run functions
 if (bossesLs) {
 	for (let i = 0; i < bosses.length; i++) {
 		bossesContainer.children[i].children[1].children[2].children[0].value =
@@ -892,10 +907,7 @@ if (bossesLs) {
 	editHtml();
 }
 
-function storeInfo() {
-	localStorage.setItem("info", JSON.stringify(bosses));
-}
-
+//button to reset everything
 function reset() {
 	localStorage.clear();
 	for (let i = 0; i < bosses.length; i++) {
