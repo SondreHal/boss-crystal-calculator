@@ -1,81 +1,78 @@
 body {
 	background-color: rgb(27, 27, 27);
-	color: white;
+	color: rgb(219, 219, 219);
 	text-align: center;
 	margin: 5rem 0 0 0;
 	font-family: sans-serif;
 }
 
-.border {
-	border: 1px solid grey;
-	border-radius: 10px;
-}
-
-.main-container {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	margin: 0;
-	margin-top: 5px;
-	padding: 0 5px;
-}
-
 p {
 	margin: 0;
-	padding: 0;
 }
 
-.informationContainer {
-	display: grid;
-	grid-template-columns: 1fr minmax(550px, 50%) 1fr;
-	grid-gap: 5px;
-}
-
-.information {
+.border {
 	border: 1px solid grey;
+	border-radius: 6px;
+}
+
+/* manual */
+.manualContainer {
+	display: grid;
+	grid-template-columns: 1fr minmax(600px, 50%) 1fr;
+}
+
+.manual {
 	grid-column-start: 2;
 }
 
-.bossPicture {
-	vertical-align: bottom;
-}
-
-.characters,
-.name-image {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin: 0;
-	gap: 20px;
-}
-
-.name-image img {
+/* information */
+.informationContainer {
 	margin-top: 5px;
-	margin-bottom: 2px;
+	display: grid;
+	grid-template-columns: 1fr minmax(600px, 50%) 1fr;
 }
 
+.information {
+	grid-column-start: 2;
+	display: grid;
+	grid-template-columns: 3fr 1fr 1.7fr 1.5fr 1.5fr;
+	margin: auto;
+}
+
+.information div {
+	height: 65px;
+	margin: 0;
+	color: grey;
+	align-items: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* bosses */
 .unique-boss {
 	display: grid;
-	grid-template-columns: 1fr minmax(550px, 50%) 1fr;
-	gap: 5px;
+	grid-template-columns: 1fr minmax(600px, 50%) 1fr;
+	height: 67px;
+	margin-top: 5px;
 }
 
-.type-mesos {
-	margin: 0;
-	margin-right: auto;
-	color: grey;
-	width: 100px;
+.boss-image {
+	margin-left: auto;
 }
 
-.bossName {
-	min-width: 250px;
-	text-align: left;
+.main-container {
+	display: grid;
+	grid-template-columns: 3fr 1fr 1.7fr 1.5fr 1.5fr;
+	grid-column-start: 2;
 }
 
-.buttons {
+.main-container div,
+p {
 	display: flex;
-	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -86,28 +83,19 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="number"] {
 	background-color: rgb(27, 27, 27);
 	color: white;
-	border: none;
-	width: 70px;
 	text-align: center;
+	padding: 10%;
 }
 
 input:focus {
 	outline: 0;
 }
 
+/* boss crystals */
 .crystal-img-amount {
-	margin: 0 auto 0 0;
+	margin: 5px auto 0 0;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: 5px;
 	min-width: 100px;
-}
-
-.playersInParty {
-	margin: 0 0 0 auto;
-}
-
-img {
-	display: block;
 }

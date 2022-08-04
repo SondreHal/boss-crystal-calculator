@@ -11,8 +11,13 @@
 		<script src="index.js" defer></script>
 	</head>
 	<body>
-		<div class="informationContainer">
-			<div class="information">
+		<header class="manualContainer">
+			<div class="manual border">
+				<p>Input players in party: Will adjust value of crystal accordingly.</p>
+				<p>
+					Input characters: The amount of characters you have that can beat a
+					specific boss.
+				</p>
 				<button
 					id="clearLocalStorage"
 					onclick="reset()"
@@ -21,7 +26,20 @@
 					Reset
 				</button>
 			</div>
-		</div>
-		<div id="bosses"></div>
+		</header>
+		<main>
+			<section class="informationContainer">
+				<div class="information">
+					<div class="bosses-info border">Bosses</div>
+					<div class="type-info border">Type</div>
+					<div class="mesos-info border">Mesos value</div>
+					<div class="players-info border">Players in party</div>
+					<div class="characters-info border">
+						Characters that can beat boss
+					</div>
+				</div>
+			</section>
+			<section id="bosses"></section>
+		</main>
 	</body>
 </html>

@@ -11,7 +11,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 1000000,
 			mesosChanged: 1000000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.01,
 			crystals: [],
 		},
 		{
@@ -22,7 +22,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 3062500,
 			mesosChanged: 3062500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.02,
 			crystals: [],
 		},
 		{
@@ -33,7 +33,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 81000000,
 			mesosChanged: 81000000,
-			mesosUniqueAdd: 0.4,
+			mesosUniqueAdd: 0.03,
 			crystals: [],
 		},
 		{
@@ -44,7 +44,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 3610000,
 			mesosChanged: 3610000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.04,
 			crystals: [],
 		},
 		{
@@ -55,7 +55,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 12960000,
 			mesosChanged: 12960000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.05,
 			crystals: [],
 		},
 		{
@@ -66,7 +66,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 95062500,
 			mesosChanged: 95062500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.06,
 			crystals: [],
 		},
 		{
@@ -77,7 +77,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 4000000,
 			mesosChanged: 4000000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.07,
 			crystals: [],
 		},
 		{
@@ -88,7 +88,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 56250000,
 			mesosChanged: 56250000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.08,
 			crystals: [],
 		},
 		{
@@ -99,7 +99,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 6250000,
 			mesosChanged: 6250000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.09,
 			crystals: [],
 		},
 		{
@@ -110,7 +110,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 3422500,
 			mesosChanged: 3422500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.1,
 			crystals: [],
 		},
 		{
@@ -121,7 +121,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 13322500,
 			mesosChanged: 13322500,
-			mesosUniqueAdd: 0.1,
+			mesosUniqueAdd: 0.11,
 			crystals: [],
 		},
 		{
@@ -132,7 +132,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 132250000,
 			mesosChanged: 132250000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.12,
 			crystals: [],
 		},
 		{
@@ -143,7 +143,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 4840000,
 			mesosChanged: 4840000,
-			mesosUniqueAdd: 0.1,
+			mesosUniqueAdd: 0.13,
 			crystals: [],
 		},
 		{
@@ -154,7 +154,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 81000000,
 			mesosChanged: 81000000,
-			mesosUniqueAdd: 0.1,
+			mesosUniqueAdd: 0.14,
 			crystals: [],
 		},
 		{
@@ -165,7 +165,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 4840000,
 			mesosChanged: 4840000,
-			mesosUniqueAdd: 0.2,
+			mesosUniqueAdd: 0.15,
 			crystals: [],
 		},
 		{
@@ -176,7 +176,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 81000000,
 			mesosChanged: 81000000,
-			mesosUniqueAdd: 0.2,
+			mesosUniqueAdd: 0.16,
 			crystals: [],
 		},
 		{
@@ -187,7 +187,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 4840000,
 			mesosChanged: 4840000,
-			mesosUniqueAdd: 0.3,
+			mesosUniqueAdd: 0.17,
 			crystals: [],
 		},
 		{
@@ -198,7 +198,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 81000000,
 			mesosChanged: 81000000,
-			mesosUniqueAdd: 0.3,
+			mesosUniqueAdd: 0.18,
 			crystals: [],
 		},
 		{
@@ -209,7 +209,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 4840000,
 			mesosChanged: 4840000,
-			mesosUniqueAdd: 0.4,
+			mesosUniqueAdd: 0.19,
 			crystals: [],
 		},
 		{
@@ -220,7 +220,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 105062500,
 			mesosChanged: 105062500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.2,
 			crystals: [],
 		},
 		{
@@ -231,7 +231,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 5290000,
 			mesosChanged: 5290000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.21,
 			crystals: [],
 		},
 		{
@@ -242,7 +242,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 7290000,
 			mesosChanged: 7290000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.22,
 			crystals: [],
 		},
 		{
@@ -253,7 +253,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 12250000,
 			mesosChanged: 12250000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.23,
 			crystals: [],
 		},
 		{
@@ -264,7 +264,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 4410000,
 			mesosChanged: 4410000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.24,
 			crystals: [],
 		},
 		{
@@ -275,7 +275,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 5062500,
 			mesosChanged: 5062500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.25,
 			crystals: [],
 		},
 		{
@@ -286,7 +286,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 6760000,
 			mesosChanged: 6760000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.26,
 			crystals: [],
 		},
 		{
@@ -297,7 +297,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 5760000,
 			mesosChanged: 5760000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.27,
 			crystals: [],
 		},
 		{
@@ -308,7 +308,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 12602500,
 			mesosChanged: 12602500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.28,
 			crystals: [],
 		},
 		{
@@ -319,7 +319,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 7022500,
 			mesosChanged: 7022500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.29,
 			crystals: [],
 		},
 		{
@@ -330,7 +330,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 64000000,
 			mesosChanged: 64000000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.3,
 			crystals: [],
 		},
 		{
@@ -341,7 +341,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 45562500,
 			mesosChanged: 45562500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.31,
 			crystals: [],
 		},
 		{
@@ -352,7 +352,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 72250000,
 			mesosChanged: 72250000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.32,
 			crystals: [],
 		},
 		{
@@ -363,7 +363,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 162562500,
 			mesosChanged: 162562500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.33,
 			crystals: [],
 		},
 		{
@@ -374,7 +374,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 370562500,
 			mesosChanged: 370562500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.34,
 			crystals: [],
 		},
 		{
@@ -385,7 +385,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 169000000,
 			mesosChanged: 169000000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.35,
 			crystals: [],
 		},
 		{
@@ -396,7 +396,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 351562500,
 			mesosChanged: 351562500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.36,
 			crystals: [],
 		},
 		{
@@ -407,7 +407,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 171610000,
 			mesosChanged: 171610000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.37,
 			crystals: [],
 		},
 		{
@@ -418,7 +418,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 451562500,
 			mesosChanged: 451562500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.38,
 			crystals: [],
 		},
 		{
@@ -429,7 +429,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 175562500,
 			mesosChanged: 175562500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.39,
 			crystals: [],
 		},
 		{
@@ -440,7 +440,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 203062500,
 			mesosChanged: 203062500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.4,
 			crystals: [],
 		},
 		{
@@ -451,7 +451,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 400000000,
 			mesosChanged: 400000000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.41,
 			crystals: [],
 		},
 		{
@@ -462,7 +462,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 191275000,
 			mesosChanged: 191275000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.42,
 			crystals: [],
 		},
 		{
@@ -473,7 +473,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 232562500,
 			mesosChanged: 232562500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.43,
 			crystals: [],
 		},
 		{
@@ -484,7 +484,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 441000000,
 			mesosChanged: 441000000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.44,
 			crystals: [],
 		},
 		{
@@ -495,7 +495,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 248062500,
 			mesosChanged: 248062500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.45,
 			crystals: [],
 		},
 		{
@@ -506,7 +506,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 462250000,
 			mesosChanged: 462250000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.46,
 			crystals: [],
 		},
 		{
@@ -517,7 +517,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 447600000,
 			mesosChanged: 447600000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.47,
 			crystals: [],
 		},
 		{
@@ -528,7 +528,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 552250000,
 			mesosChanged: 552250000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.48,
 			crystals: [],
 		},
 		{
@@ -539,7 +539,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 264062500,
 			mesosChanged: 264062500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.49,
 			crystals: [],
 		},
 		{
@@ -550,7 +550,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 484000000,
 			mesosChanged: 484000000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.5,
 			crystals: [],
 		},
 		{
@@ -561,7 +561,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 2500000000,
 			mesosChanged: 2500000000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.51,
 			crystals: [],
 		},
 		{
@@ -572,7 +572,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 668437500,
 			mesosChanged: 668437500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.52,
 			crystals: [],
 		},
 		{
@@ -583,7 +583,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 756250000,
 			mesosChanged: 756250000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.53,
 			crystals: [],
 		},
 		{
@@ -594,7 +594,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 1000000000,
 			mesosChanged: 1000000000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.54,
 			crystals: [],
 		},
 		{
@@ -605,7 +605,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 4202500,
 			mesosChanged: 4202500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.55,
 			crystals: [],
 		},
 		{
@@ -616,7 +616,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 13322500,
 			mesosChanged: 13322500,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.56,
 			crystals: [],
 		},
 		{
@@ -627,7 +627,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 81000000,
 			mesosChanged: 81000000,
-			mesosUniqueAdd: 0.4,
+			mesosUniqueAdd: 0.57,
 			crystals: [],
 		},
 		{
@@ -638,7 +638,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 6000000,
 			mesosChanged: 6000000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.58,
 			crystals: [],
 		},
 		{
@@ -649,7 +649,7 @@ function initBosses() {
 			previousValueTwo: 1,
 			mesos: 144000000,
 			mesosChanged: 144000000,
-			mesosUniqueAdd: 0,
+			mesosUniqueAdd: 0.59,
 			crystals: [],
 		},
 	];
@@ -680,39 +680,39 @@ if (bossesLs) {
 function initializeHtml() {
 	let uniqueBossesHtml = "";
 	for (let i = 0; i < bosses.length; i++) {
-		uniqueBossesHtml += `<div class="unique-boss">
-				<input
-					class="playersInParty"
-					type="number"
-					min="1"
-					max="6"
-					value="1"
-					style="font-size: 20px"
-					onkeydown="return false;"
-					id="playersInParty${bosses[i].name.replace(/\s+/g, "")}${bosses[i].difficulty}"
-				/>
-				<div class="main-container border">
-					<div class="name-image">
-						<img src="images/${bosses[i].name.replace(/\s+/g, "_").toLocaleLowerCase()}.png"/>
-						<p class="bossName">${bosses[i].difficulty} ${bosses[i].name}</p>
-					</div>
-					<p class="type-mesos">
-					${bosses[i].type}: 
+		uniqueBossesHtml += `<section class="unique-boss">
+		<img class="boss-image" src="images/${bosses[i].name
+			.replace(/\s+/g, "_")
+			.toLocaleLowerCase()}.png"/>
+				<div class="main-container">
+					<p class="bossName border">${bosses[i].difficulty} ${bosses[i].name}</p>
+					<p class="type border">
+					${bosses[i].type}</p>
+					<p class="mesos border">
 					${bosses[i].mesos.toLocaleString()}
-					 mesos
+					<br> 
+					mesos
 					</p>
-					<div>
 						<input
-							class="characters"
+							class="playersInParty border"
+							type="number"
+							min="1"
+							max="6"
+							value="1"
+							style="font-size: 20px"
+							onkeydown="return false;"
+							id="playersInParty${bosses[i].name.replace(/\s+/g, "")}${bosses[i].difficulty}"
+						/>
+						<input
+							class="characters border"
 							type="number"
 							min="0"
 							max="60"
 							value="0"
-							style="font-size: 30px"
+							style="font-size: 20px"
 							onkeydown="return false;"
 							id="characters${bosses[i].name.replace(/\s+/g, "")}${bosses[i].difficulty}"
 						/>
-					</div>
 				</div>
 				<div class="crystal-img-amount">
 					<div>
@@ -722,7 +722,7 @@ function initializeHtml() {
 					<p class="crystalsToBeSold">x 0</p>
 					</div>
 				</div>
-			</div>`;
+			</section>`;
 	}
 	bossesContainer.innerHTML = uniqueBossesHtml;
 }
@@ -732,11 +732,9 @@ initializeHtml();
 function editHtml() {
 	for (let i = 0; i < bosses.length; i++) {
 		//displays mesos value of boss crystal in html
-		bossesContainer.children[i].children[1].children[1].textContent =
-			bosses[i].type +
-			": " +
-			Math.floor(bosses[i].mesos / bosses[i].previousValueTwo).toLocaleString() +
-			" mesos";
+		bossesContainer.children[i].children[1].children[2].innerHTML = `
+			${Math.floor(bosses[i].mesos / bosses[i].previousValueTwo).toLocaleString()}
+			<br> mesos`;
 	}
 }
 
@@ -746,26 +744,30 @@ function editHtml() {
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 for (let i = 0; i < bosses.length; i++) {
-	bossesContainer.children[i].children[0].addEventListener("change", (event) => {
-		const buttonId = document.querySelector(`#${event.target.id}`);
-		const buttonValue = parseInt(buttonId.value);
-		const bossCrystals = bosses[i].crystals;
-		const type = bosses[i].type;
-		const bossMesos = bosses[i].mesos;
-		const bossMesosUniqueAdd = bosses[i].mesosUniqueAdd;
+	bossesContainer.children[i].children[1].children[3].addEventListener(
+		"change",
+		(event) => {
+			const buttonId = document.querySelector(`#${event.target.id}`);
+			const buttonValue = parseInt(buttonId.value);
+			const bossCrystals = bosses[i].crystals;
+			const type = bosses[i].type;
+			const bossMesos = bosses[i].mesos;
+			const bossMesosUniqueAdd = bosses[i].mesosUniqueAdd;
 
-		bosses[i].previousValueTwo = parseInt(buttonId.value);
-		//updates base mesos value for crystals in bosses objects array
-		bosses[i].mesosChanged = Math.floor(bossMesos / buttonValue);
+			bosses[i].previousValueTwo = parseInt(buttonId.value);
+			//updates base mesos value for crystals in bosses objects array
+			bosses[i].mesosChanged = Math.floor(bossMesos / buttonValue);
 
-		//updates mesos values of current crystals in bosses objects array
-		for (let i = 0; i < bossCrystals.length; i++) {
-			bossCrystals[i] = Math.floor(bossMesos / buttonValue) + bossMesosUniqueAdd;
+			//updates mesos values of current crystals in bosses objects array
+			for (let i = 0; i < bossCrystals.length; i++) {
+				bossCrystals[i] =
+					Math.floor(bossMesos / buttonValue) + bossMesosUniqueAdd;
+			}
+
+			editHtml();
+			sortAndAdd();
 		}
-
-		editHtml();
-		sortAndAdd();
-	});
+	);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -774,7 +776,7 @@ for (let i = 0; i < bosses.length; i++) {
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 for (let i = 0; i < bosses.length; i++) {
-	bossesContainer.children[i].children[1].children[2].children[0].addEventListener(
+	bossesContainer.children[i].children[1].children[4].addEventListener(
 		"change",
 		(event) => {
 			const buttonId = document.querySelector(`#${event.target.id}`);
@@ -885,10 +887,13 @@ function sortAndAdd() {
 //if there is localstorage, edit values of inputs and run functions
 if (bossesLs) {
 	for (let i = 0; i < bosses.length; i++) {
-		bossesContainer.children[i].children[1].children[2].children[0].value =
-			bosses[i].previousValue;
+		//left input
+		bossesContainer.children[i].children[1].children[3].value =
+			bosses[i].previousValueTwo;
 
-		bossesContainer.children[i].children[0].value = bosses[i].previousValueTwo;
+		//right input
+		bossesContainer.children[i].children[1].children[4].value =
+			bosses[i].previousValue;
 	}
 	sortAndAdd();
 	editHtml();
@@ -902,15 +907,11 @@ if (bossesLs) {
 function reset() {
 	localStorage.clear();
 	for (let i = 0; i < bosses.length; i++) {
-		//input right side html value
-		bossesContainer.children[i].children[1].children[2].children[0].value = 0;
 		//input left side html value
-		bossesContainer.children[i].children[0].value = 1;
+		bossesContainer.children[i].children[1].children[3].value = 1;
+		//input right side html value
+		bossesContainer.children[i].children[1].children[4].value = 0;
 
-		//mesos displayed value
-		bossesContainer.children[i].children[1].children[1].textContent = `${
-			bosses[i].type
-		}: ${bosses[i].mesos.toLocaleString()} mesos`;
 		//boss crystal image and amount to sell
 		bossesContainer.children[i].children[2].children[0].innerHTML =
 			"<img src='images/grey.png' class='bossCrystal' />";
@@ -918,4 +919,5 @@ function reset() {
 			"x 0";
 	}
 	initBosses();
+	editHtml();
 }
