@@ -13,13 +13,25 @@
 	<body>
 		<header class="manualContainer">
 			<div class="manual border">
-				<p>Input players in party: Will adjust value of crystal accordingly.</p>
+				<h1>Boss Crystal Calculator</h1>
 				<p>
-					Input characters: The amount of characters you have that can beat a
-					specific boss.
+					<div style="font-weight: bold">Players:</div>
+					How many players you have in your party. <br>
+					Crystal value will adjust
+					accordingly.
+				</p>
+				<p>
+					<div style="font-weight: bold">Characters:</div>
+					How many characters you have that can beat a specific boss.
+				</p>
+				<p>
+					<div style="font-weight: bold">Output:</div>
+					Crystals on the right shows which ones is most profitable to sell.<br>
+					Below on the page is the same list, but you can see what to sell more clearly.
 				</p>
 				<button
 					id="clearLocalStorage"
+					class="reset-btn"
 					onclick="reset()"
 					title="them's hoverin' words"
 				>
@@ -30,13 +42,11 @@
 		<main>
 			<section class="informationContainer">
 				<div class="information">
-					<div class="bosses-info border">Bosses</div>
-					<div class="type-info border">Type</div>
-					<div class="mesos-info border">Mesos value</div>
-					<div class="players-info border">Players in party</div>
-					<div class="characters-info border">
-						Characters that can beat boss
-					</div>
+					<p class="bosses-info border">Bosses</p>
+					<p class="type-info border">Type</p>
+					<p class="mesos-info border">Mesos value</p>
+					<p class="players-info border">Players</p>
+					<p class="characters-info border">Characters</p>
 				</div>
 			</section>
 			<section id="bosses"></section>
