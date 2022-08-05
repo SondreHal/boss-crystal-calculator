@@ -677,19 +677,19 @@ if (bossesLs) {
 //    DYNAMIC HTML
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
-function initializeHtml() {
-	let uniqueBossesHtml = "";
-	for (let i = 0; i < bosses.length; i++) {
-		uniqueBossesHtml += `<section class="unique-boss">
-		<img class="boss-image" src="images/${bosses[i].name
+function initializeHtml(bosses) {
+	const { name, difficulty, type, mesos } = bosses;
+
+	bossesContainer.innerHTML += `<section class="unique-boss">
+		<img class="boss-image" src="images/${name
 			.replace(/\s+/g, "_")
 			.toLocaleLowerCase()}.png"/>
 				<div class="main-container">
-					<p class="bossName border">${bosses[i].difficulty} ${bosses[i].name}</p>
+					<p class="bossName border">${difficulty} ${name}</p>
 					<p class="type border">
-					${bosses[i].type}</p>
+					${type}</p>
 					<p class="mesos border">
-					${bosses[i].mesos.toLocaleString()}
+					${mesos.toLocaleString()}
 					<br> 
 					mesos
 					</p>
@@ -701,7 +701,7 @@ function initializeHtml() {
 							value="1"
 							style="font-size: 20px"
 							onkeydown="return false;"
-							id="playersInParty${bosses[i].name.replace(/\s+/g, "")}${bosses[i].difficulty}"
+							id="playersInParty${name.replace(/\s+/g, "")}${difficulty}"
 						/>
 						<input
 							class="characters border"
@@ -711,7 +711,7 @@ function initializeHtml() {
 							value="0"
 							style="font-size: 20px"
 							onkeydown="return false;"
-							id="characters${bosses[i].name.replace(/\s+/g, "")}${bosses[i].difficulty}"
+							id="characters${name.replace(/\s+/g, "")}${difficulty}"
 						/>
 				</div>
 				<div class="crystal-img-amount">
@@ -723,17 +723,19 @@ function initializeHtml() {
 					</div>
 				</div>
 			</section>`;
-	}
-	bossesContainer.innerHTML = uniqueBossesHtml;
 }
-initializeHtml();
+
+for (let i = 0; i < bosses.length; i++) {
+	initializeHtml(bosses[i]);
+}
 
 //if values changes
 function editHtml() {
 	for (let i = 0; i < bosses.length; i++) {
+		const { mesos, previousValueTwo } = bosses[i];
 		//displays mesos value of boss crystal in html
 		bossesContainer.children[i].children[1].children[2].innerHTML = `
-			${Math.floor(bosses[i].mesos / bosses[i].previousValueTwo).toLocaleString()}
+			${Math.floor(mesos / previousValueTwo).toLocaleString()}
 			<br> mesos`;
 	}
 }
@@ -749,19 +751,17 @@ for (let i = 0; i < bosses.length; i++) {
 		(event) => {
 			const buttonId = document.querySelector(`#${event.target.id}`);
 			const buttonValue = parseInt(buttonId.value);
+			const { previousValueTwo, mesos, mesosChanged, mesosUniqueAdd, crystals } =
+				bosses[i];
 			const bossCrystals = bosses[i].crystals;
-			const type = bosses[i].type;
-			const bossMesos = bosses[i].mesos;
-			const bossMesosUniqueAdd = bosses[i].mesosUniqueAdd;
 
 			bosses[i].previousValueTwo = parseInt(buttonId.value);
 			//updates base mesos value for crystals in bosses objects array
-			bosses[i].mesosChanged = Math.floor(bossMesos / buttonValue);
+			bosses[i].mesosChanged = Math.floor(mesos / buttonValue);
 
 			//updates mesos values of current crystals in bosses objects array
 			for (let i = 0; i < bossCrystals.length; i++) {
-				bossCrystals[i] =
-					Math.floor(bossMesos / buttonValue) + bossMesosUniqueAdd;
+				crystals[i] = Math.floor(mesos / buttonValue) + mesosUniqueAdd;
 			}
 
 			editHtml();
