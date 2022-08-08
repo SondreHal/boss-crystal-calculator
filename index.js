@@ -751,8 +751,7 @@ for (let i = 0; i < bosses.length; i++) {
 		(event) => {
 			const buttonId = document.querySelector(`#${event.target.id}`);
 			const buttonValue = parseInt(buttonId.value);
-			const { previousValueTwo, mesos, mesosChanged, mesosUniqueAdd, crystals } =
-				bosses[i];
+			const { mesos, mesosUniqueAdd, crystals } = bosses[i];
 			const bossCrystals = bosses[i].crystals;
 
 			bosses[i].previousValueTwo = parseInt(buttonId.value);
