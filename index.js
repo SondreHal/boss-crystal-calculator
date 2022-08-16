@@ -677,13 +677,13 @@ if (bossesLs) {
 //    DYNAMIC HTML
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
-function initializeHtml(bosses) {
-	const { name, difficulty, type, mesos } = bosses;
+function initializeHtml() {
+	let temporary = "";
 
-	bossesContainer.innerHTML += `<section class="unique-boss">
-		<img class="boss-image" src="images/${name
-			.replace(/\s+/g, "_")
-			.toLocaleLowerCase()}.png"/>
+	for (let i = 0; i < bosses.length; i++) {
+		const { name, difficulty, type, mesos } = bosses[i];
+		temporary += `<section class="unique-boss">
+		<img class="boss-image" src="images/${name.replace(/\s+/g, "_").toLocaleLowerCase()}.png"/>
 				<div class="main-container">
 					<p class="bossName border">${difficulty} ${name}</p>
 					<p class="type border">
@@ -723,11 +723,11 @@ function initializeHtml(bosses) {
 					</div>
 				</div>
 			</section>`;
+	}
+	bossesContainer.innerHTML = temporary;
 }
 
-for (let i = 0; i < bosses.length; i++) {
-	initializeHtml(bosses[i]);
-}
+initializeHtml();
 
 //if values changes
 function editHtml() {
@@ -746,27 +746,24 @@ function editHtml() {
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 for (let i = 0; i < bosses.length; i++) {
-	bossesContainer.children[i].children[1].children[3].addEventListener(
-		"change",
-		(event) => {
-			const buttonId = document.querySelector(`#${event.target.id}`);
-			const buttonValue = parseInt(buttonId.value);
-			const { mesos, mesosUniqueAdd, crystals } = bosses[i];
-			const bossCrystals = bosses[i].crystals;
+	bossesContainer.children[i].children[1].children[3].addEventListener("change", (event) => {
+		const buttonId = document.querySelector(`#${event.target.id}`);
+		const buttonValue = parseInt(buttonId.value);
+		const { mesos, mesosUniqueAdd, crystals } = bosses[i];
+		const bossCrystals = bosses[i].crystals;
 
-			bosses[i].previousValueTwo = parseInt(buttonId.value);
-			//updates base mesos value for crystals in bosses objects array
-			bosses[i].mesosChanged = Math.floor(mesos / buttonValue);
+		bosses[i].previousValueTwo = parseInt(buttonId.value);
+		//updates base mesos value for crystals in bosses objects array
+		bosses[i].mesosChanged = Math.floor(mesos / buttonValue);
 
-			//updates mesos values of current crystals in bosses objects array
-			for (let i = 0; i < bossCrystals.length; i++) {
-				crystals[i] = Math.floor(mesos / buttonValue) + mesosUniqueAdd;
-			}
-
-			editHtml();
-			sortAndAdd();
+		//updates mesos values of current crystals in bosses objects array
+		for (let i = 0; i < bossCrystals.length; i++) {
+			crystals[i] = Math.floor(mesos / buttonValue) + mesosUniqueAdd;
 		}
-	);
+
+		editHtml();
+		sortAndAdd();
+	});
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -775,52 +772,49 @@ for (let i = 0; i < bosses.length; i++) {
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 for (let i = 0; i < bosses.length; i++) {
-	bossesContainer.children[i].children[1].children[4].addEventListener(
-		"change",
-		(event) => {
-			const buttonId = document.querySelector(`#${event.target.id}`);
-			const buttonValue = parseInt(buttonId.value);
-			const bossCrystals = bosses[i].crystals;
-			const bossMesos = bosses[i].mesosChanged;
-			const bossMesosUniqueAdd = bosses[i].mesosUniqueAdd;
-			const type = bosses[i].type;
+	bossesContainer.children[i].children[1].children[4].addEventListener("change", (event) => {
+		const buttonId = document.querySelector(`#${event.target.id}`);
+		const buttonValue = parseInt(buttonId.value);
+		const bossCrystals = bosses[i].crystals;
+		const bossMesos = bosses[i].mesosChanged;
+		const bossMesosUniqueAdd = bosses[i].mesosUniqueAdd;
+		const type = bosses[i].type;
 
-			//pushes crystal values to array if input increments
-			if (buttonValue > bosses[i].previousValue) {
-				if (bosses[i].name === "Julieta") {
-					for (let i = 0; i < 28; i++) {
-						bossCrystals.push(bossMesos + bossMesosUniqueAdd);
-					}
-				} else if (type === "Daily") {
-					for (let i = 0; i < 7; i++) {
-						bossCrystals.push(bossMesos + bossMesosUniqueAdd);
-					}
-				} else if (type === "Weekly") {
-					for (let i = 0; i < 1; i++) {
-						bossCrystals.push(bossMesos + bossMesosUniqueAdd);
-					}
-				} else {
-					for (let i = 0; i < 1; i++) {
-						bossCrystals.push(bossMesos + bossMesosUniqueAdd);
-					}
+		//pushes crystal values to array if input increments
+		if (buttonValue > bosses[i].previousValue) {
+			if (bosses[i].name === "Julieta") {
+				for (let i = 0; i < 28; i++) {
+					bossCrystals.push(bossMesos + bossMesosUniqueAdd);
 				}
-				//removes crystal values from array if input decreases
+			} else if (type === "Daily") {
+				for (let i = 0; i < 7; i++) {
+					bossCrystals.push(bossMesos + bossMesosUniqueAdd);
+				}
+			} else if (type === "Weekly") {
+				for (let i = 0; i < 1; i++) {
+					bossCrystals.push(bossMesos + bossMesosUniqueAdd);
+				}
 			} else {
-				if (bosses[i].name === "Julieta") {
-					bossCrystals.splice(0, 28);
-				} else if (type === "Daily") {
-					bossCrystals.splice(0, 7);
-				} else if (type === "Weekly") {
-					bossCrystals.splice(0, 1);
-				} else {
-					bossCrystals.splice(0, 1);
+				for (let i = 0; i < 1; i++) {
+					bossCrystals.push(bossMesos + bossMesosUniqueAdd);
 				}
 			}
-			bosses[i].previousValue = parseInt(buttonId.value);
-
-			sortAndAdd();
+			//removes crystal values from array if input decreases
+		} else {
+			if (bosses[i].name === "Julieta") {
+				bossCrystals.splice(0, 28);
+			} else if (type === "Daily") {
+				bossCrystals.splice(0, 7);
+			} else if (type === "Weekly") {
+				bossCrystals.splice(0, 1);
+			} else {
+				bossCrystals.splice(0, 1);
+			}
 		}
-	);
+		bosses[i].previousValue = parseInt(buttonId.value);
+
+		sortAndAdd();
+	});
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -869,8 +863,7 @@ function sortAndAdd() {
 			textPath.textContent = "x 0";
 			imgPath.innerHTML = "<img src='images/grey.png' class='bossCrystal' />";
 		} else {
-			textPath.textContent =
-				"x " + counts[bosses[i].mesosChanged + bosses[i].mesosUniqueAdd];
+			textPath.textContent = "x " + counts[bosses[i].mesosChanged + bosses[i].mesosUniqueAdd];
 			imgPath.innerHTML = "<img src='images/blue.png' class='bossCrystal' />";
 		}
 	}
@@ -887,12 +880,10 @@ function sortAndAdd() {
 if (bossesLs) {
 	for (let i = 0; i < bosses.length; i++) {
 		//left input
-		bossesContainer.children[i].children[1].children[3].value =
-			bosses[i].previousValueTwo;
+		bossesContainer.children[i].children[1].children[3].value = bosses[i].previousValueTwo;
 
 		//right input
-		bossesContainer.children[i].children[1].children[4].value =
-			bosses[i].previousValue;
+		bossesContainer.children[i].children[1].children[4].value = bosses[i].previousValue;
 	}
 	sortAndAdd();
 	editHtml();
@@ -914,8 +905,7 @@ function reset() {
 		//boss crystal image and amount to sell
 		bossesContainer.children[i].children[2].children[0].innerHTML =
 			"<img src='images/grey.png' class='bossCrystal' />";
-		bossesContainer.children[i].children[2].children[1].children[0].textContent =
-			"x 0";
+		bossesContainer.children[i].children[2].children[1].children[0].textContent = "x 0";
 	}
 	initBosses();
 	editHtml();
